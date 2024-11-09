@@ -8,32 +8,47 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <meta name="title" content="pendulum box animation" />
-<meta name="description" content="here Tomarai witnessed his grandfather standing underneath the oak tree with its leaves fall at a leisurely pace. Heron Kobayashi, Ichiro’s grandfather places his right hand on the boys'" />
+    <meta name="description"
+        content="here Tomarai witnessed his grandfather standing underneath the oak tree with its leaves fall at a leisurely pace. Heron Kobayashi, Ichiro’s grandfather places his right hand on the boys'" />
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://pendulum-box.vercel.app/"/>
-<meta property="og:title" content="pendulum box animation" />
-<meta property="og:description" content="here Tomarai witnessed his grandfather standing underneath the oak tree with its leaves fall at a leisurely pace. Heron Kobayashi, Ichiro’s grandfather places his right hand on the boys'" />
-<meta property="og:image" content="/meta-tag-img.png"/>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pendulum-box.vercel.app/" />
+    <meta property="og:title" content="pendulum box animation" />
+    <meta property="og:description"
+        content="here Tomarai witnessed his grandfather standing underneath the oak tree with its leaves fall at a leisurely pace. Heron Kobayashi, Ichiro’s grandfather places his right hand on the boys'" />
+    <meta property="og:image" content="/meta-tag-img.png" />
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="https://pendulum-box.vercel.app/"/>
-<meta property="twitter:title" content="pendulum box animation" />
-<meta property="twitter:description" content="here Tomarai witnessed his grandfather standing underneath the oak tree with its leaves fall at a leisurely pace. Heron Kobayashi, Ichiro’s grandfather places his right hand on the boys'" />
-<meta property="twitter:image" content="/meta-tag-img.png" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://pendulum-box.vercel.app/" />
+    <meta property="twitter:title" content="pendulum box animation" />
+    <meta property="twitter:description"
+        content="here Tomarai witnessed his grandfather standing underneath the oak tree with its leaves fall at a leisurely pace. Heron Kobayashi, Ichiro’s grandfather places his right hand on the boys'" />
+    <meta property="twitter:image" content="/meta-tag-img.png" />
 
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        } 
+    </script>
+
 </head>
 
-<body>
+<body class="overflow-hidden">
     <section class="min-h-screen bg-gray-200 flex justify-center items-center">
         <div class="container mx-auto max-w-[1240px] items-center px-3">
-            <h1 class="lg:text-6xl text-3xl font-bold text-center mb-20">Pendulum box</h1> 
+            <h1 class="lg:text-6xl text-3xl font-bold text-center md:mb-20 mb-10">Pendulum box</h1>
             <div class="flex flex-wrap justify-evenly">
-                <div class="w-4/12 px-20 ">
+                <div class="xl:w-4/12 md:w-1/2 sm:px-20 px-5 ">
                     <div
                         class="w-[220px] h-[180px] bg-[#1d2e9f] rounded-[5%] items-center border-t-[15px] border-t-black">
                         <div class="pt-[120px] flex absolute pl-2.5">
@@ -45,7 +60,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-4/12 px-20 ">
+                <div class="xl:w-4/12 md:w-1/2 sm:px-20 px-5 md:mt-0 mt-10">
                     <div
                         class="w-[220px] h-[180px] bg-[#1d2e9f] rounded-[5%] items-center border-t-[15px] border-t-black">
                         <div class="pt-[120px] flex absolute pl-2.5">
@@ -57,7 +72,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-4/12 px-20 ">
+                <div class="xl:w-4/12 xl:mt-0 mt-10 sm:px-20 px-5">
                     <div
                         class="w-[260px] h-[180px] bg-[#1d2e9f] rounded-[5%] items-center border-t-[15px] border-t-black">
                         <div class="pt-[120px] flex absolute pl-2.5">
