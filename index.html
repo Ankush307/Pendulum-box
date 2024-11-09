@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendulum box</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .ball {
+            transform-origin: 50% -300%;
+        }
+
+        .jump-ball {
+            height: 50px;
+            width: 50px;
+            background: red;
+            border-radius: 100%;
+            right: 20%;
+            position: absolute;
+        }
+
+        .ball::before {
+            content: '';
+            width: 2px;
+            height: 120px;
+            background-color: #fffeff;
+            left: 18px;
+            top: -120px;
+            position: absolute;
+        }
+
+        .dots::after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: red;
+            position: absolute;
+            border-radius: 100%;
+            left: 14px;
+            top: -128px;
+        }
+
+        .ball.first {
+            animation: firstball 1s alternate ease-in infinite;
+        }
+
+        .jump-ball {
+            animation: jumpingball 1s alternate ease-in infinite;
+        }
+
+        @keyframes firstball {
+            0% {
+                transform: rotate(40deg);
+            }
+
+            50% {
+                transform: rotate(0deg);
+            }
+        }
+
+        .ball.last {
+            animation: lastball 1s alternate ease-out infinite;
+        }
+
+        @keyframes lastball {
+            50% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(-40deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="min-h-screen bg-gray-200 flex justify-center items-center">
+        <div class="container mx-auto max-w-[1240px] items-center px-3">
+            <h1 class="lg:text-6xl text-3xl font-bold text-center mb-20">Pendulum box</h1> 
+            <div class="flex flex-wrap justify-evenly">
+                <div class="w-4/12 px-20 ">
+                    <div
+                        class="w-[220px] h-[180px] bg-[#1d2e9f] rounded-[5%] items-center border-t-[15px] border-t-black">
+                        <div class="pt-[120px] flex absolute pl-2.5">
+                            <div class="ball dots first h-[40px] w-[40px] rounded-full bg-[#8dbdf3] relative"></div>
+                            <div class="ball dots h-[40px] w-[40px] rounded-full bg-[#8dbdf3] relative"></div>
+                            <div class="ball dots h-[40px] w-[40px] rounded-full bg-[#8dbdf3] relative"></div>
+                            <div class="ball dots  h-[40px] w-[40px] rounded-full bg-[#8dbdf3] relative"></div>
+                            <div class="ball dots last h-[40px] w-[40px] rounded-full bg-[#8dbdf3] relative"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-4/12 px-20 ">
+                    <div
+                        class="w-[220px] h-[180px] bg-[#1d2e9f] rounded-[5%] items-center border-t-[15px] border-t-black">
+                        <div class="pt-[120px] flex absolute pl-2.5">
+                            <div class="ball dots first h-[40px] w-[40px] rounded-full bg-[#8dbdf3] relative"></div>
+                            <div class="ball dots first h-[40px] w-[40px] rounded-full bg-[#8dbdf3] relative"></div>
+                            <div class="ball dots h-[40px] w-[40px] rounded-full bg-[#8dbdf3] relative"></div>
+                            <div class="ball dots last h-[40px] w-[40px] rounded-full bg-[#8dbdf3] relative"></div>
+                            <div class="ball dots last h-[40px] w-[40px] rounded-full bg-[#8dbdf3] relative"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-4/12 px-20 ">
+                    <div
+                        class="w-[260px] h-[180px] bg-[#1d2e9f] rounded-[5%] items-center border-t-[15px] border-t-black">
+                        <div class="pt-[120px] flex absolute pl-2.5">
+                            <div class="ball dots first h-[40px] w-[40px] rounded-full bg-[#8dbdf3] relative"></div>
+                            <div class="ball dots first h-[40px] w-[40px] rounded-full bg-[#8dbdf3] relative"></div>
+                            <div class="ball dots first h-[40px] w-[40px] rounded-full bg-[#8dbdf3] relative"></div>
+                            <div class="ball dots last h-[40px] w-[40px] rounded-full bg-[#8dbdf3] relative"></div>
+                            <div class="ball dots last h-[40px] w-[40px] rounded-full bg-[#8dbdf3] relative"></div>
+                            <div class="ball dots last h-[40px] w-[40px] rounded-full bg-[#8dbdf3] relative"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
