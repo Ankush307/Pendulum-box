@@ -1,0 +1,65 @@
+        .ball {
+            transform-origin: 50% -300%;
+        }
+
+        .jump-ball {
+            height: 50px;
+            width: 50px;
+            background: red;
+            border-radius: 100%;
+            right: 20%;
+            position: absolute;
+        }
+
+        .ball::before {
+            content: '';
+            width: 2px;
+            height: 120px;
+            background-color: #fffeff;
+            left: 18px;
+            top: -120px;
+            position: absolute;
+        }
+
+        .dots::after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: red;
+            position: absolute;
+            border-radius: 100%;
+            left: 14px;
+            top: -128px;
+        }
+
+        .ball.first {
+            animation: firstball 1s alternate ease-in infinite;
+        }
+
+        .jump-ball {
+            animation: jumpingball 1s alternate ease-in infinite;
+        }
+
+        @keyframes firstball {
+            0% {
+                transform: rotate(40deg);
+            }
+
+            50% {
+                transform: rotate(0deg);
+            }
+        }
+
+        .ball.last {
+            animation: lastball 1s alternate ease-out infinite;
+        }
+
+        @keyframes lastball {
+            50% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(-40deg);
+            }
+        }
